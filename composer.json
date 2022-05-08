@@ -1,0 +1,19 @@
+{
+    "name": "jjenus/truthy",
+    "description": "This application is sole to display how the Buddie app effectively uses the Twitter api",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jjenus",
+            "email": "biz.jenus@gmail.com"
+        }
+    ],
+    "require": {}, 
+    "autoload": {
+        "psr-4": { 
+          "Buddie\\": "vendor/Buddie/src", 
+          "Truthy\\": "server" 
+        }
+    }
+}

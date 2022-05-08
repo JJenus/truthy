@@ -1,0 +1,27 @@
+@font-face  {
+  font-family:proxima-nova;
+  font-weight:400;font-style:normal;
+  src:url(https://d2avoc1xjbdrch.cloudfront.net/fonts/fd-prox-c9bd270a.woff)format("woff"),url(/fonts/fd-prox-b63cb810.ttf)format("truetype")
+}
+  @font-face  {
+    font-family:proxima-nova;
+    font-weight:700;
+    font-style:normal;
+    src:url("https://d2avoc1xjbdrch.cloudfront.net/fonts/fd-prox-bold-2d3d0d40.woff")format("woff"),url(/fonts/fd-prox-bold-af1f1bc8.ttf)format("truetype")
+  }
+  
+  @font-face  {
+    font-family:proxima-nova-condensed;
+    font-weight:400;
+    font-style:normal;
+    src:url("https://d2avoc1xjbdrch.cloudfront.net/fonts/fd-prox-condensed-8c975479.woff")format("woff"),url(/fonts/fd-prox-condensed-dd153cc5.ttf)format("truetype")
+  }
+  @font-face  {
+    font-family:shentox-bold;
+    font-weight:700;
+    font-style:normal;
+    src:url("https://d2avoc1xjbdrch.cloudfront.net/fonts/shentox-bold-93d65d09.woff")format("woff"),url(/fonts/shentox-bold.tff)format("truetype")
+  }
+  .proxi { 
+    font-family: "proxima-nova",sans-serif; 
+  }

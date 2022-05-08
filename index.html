@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="./assets/node_modules/eruda/eruda.js"></script>
+		<script type="text/javascript" charset="utf-8">
+		  eruda.init();
+		</script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/fanduel.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <header class="header">
+        <h1>Truthy</h1>
+      </header>
+      <aside class="bus-headi">
+        <h3>Usage</h3>
+        <p>
+          Make reviews by tagging #truthy and a mention of the business/company handle @O'bounce
+         , with desired rating as #rating_[1-5].
+         Referesh and the results will appear here.
+        </p>
+        <p>
+          <span class="badge">Example</span>
+          Locating @O'Bounce was a bit stressful despite the 
+          Google maps being pinpoint.
+          #truthy #rating_3. 
+        </p>
+      </aside>
+      <aside class="bus-head d-none">
+        <div class="bus-logo">
+          <img class="w-100" src="img.jpeg" alt="business-logo" />
+        </div>
+        <div class="bus-details">
+          <h1>Hartticle</h1>
+          <p>
+            Review 4,245 <i class="fa fa-circle"></i> Excellent
+          </p>
+          <div class="ratings">
+            <div class="stars">
+              <i class="fas fa-star rated "></i>
+              <i class="fas fa-star rated "></i>
+              <i class="fas fa-star rated "></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div>5.0</div>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="user-reviews">
+          <div v-for="review in reviews" class="review-card">
+            <div class="review-head">
+              <img class="w-100" :src="review.user.image" alt="business-logo" />
+              <div class="name-box">
+                <p>
+                  {{review.user.name}} 
+                </p>
+                <small>{{review.created_at}}</small>
+              </div>
+              <div class="stars">
+                <i v-for="itr in num(review.review.rating)" class="fas fa-star fs-1 rated "></i>
+                <i v-for="itr in 5 - num(review.review.rating)" class="fas fs-1 fa-star"></i>
+              </div>
+            </div>
+            <p class="review-comment">
+              {{review.review.text}} 
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="assets/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/main.vue.js" type="text/javascript" charset="utf-8"></script> 
+  </body>
+</html>

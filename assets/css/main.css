@@ -1,0 +1,253 @@
+:root {
+  --BGimage: radial-gradient(
+    circle at top,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+}
+* {
+  box-sizing: border-box;
+}
+*:focus {
+    outline: 0 !important;
+}
+html{
+  font-size: 65%;
+  margin: 0;
+  padding: 0;
+} 
+body{
+  margin: 0;
+  padding: 0;
+  font-family:proxima-nova;
+  font-size:1.6rem;
+  line-height:1.4;
+  background-image: var(--BGimage);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  color: white;
+  overflow: hidden;
+} 
+
+/*
+Utility 
+*/
+.w-100{
+  width :100%;
+}
+.d-none {
+  display: none !important;
+} 
+.d-block{
+  display: block;
+} 
+
+.badge{
+  padding: 5px;
+  color: #444;
+  background-color: #eee;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-left: auto;
+}
+
+.container{
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+.header{
+  width: 100%;
+}
+
+.header form{
+  display: flex;
+  justify-content: center;
+} 
+
+/*
+Inputs
+*/
+.input {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+  margin-right: 10px;
+} 
+
+.fs-1{
+  font-size: 1.0rem !important;
+}
+
+.input:focus{
+  border: 2px solid #ee8;
+  border-radius: 10px;
+} 
+/*
+Buttons
+*/
+.btn {
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 60px;
+  background-color: hsl(230, 89%, 65%);
+} 
+
+.btn:active {
+  color: #fff;
+  background-color: hsl(230, 79%, 60%);
+} 
+
+/*
+  Business card
+*/
+
+.businesses{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.business{
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 1.8rem;
+  padding: 10px;
+  box-shadow: 0 7px 0 0 hsl(230, 89%, 62%), inset 0 5px 2px 0 hsl(240, 3%, 79%);
+} 
+.business .business-header{
+  align-items: baseline;
+  display: flex;
+} 
+
+.business .business-logo{
+  display: flex;
+  margin-right: 10px;
+  padding: 4px;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+} 
+.business-header .title {
+  font-weight: 800;
+  margin: 0;
+  font-size: 1.96rem;
+} 
+.logo{
+  font-size: 200%;
+  margin: auto;
+}
+
+.business .reviews{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+} 
+
+.rated{
+  color: yellow;
+} 
+.bus-headi{
+  margin-bottom: 50px;
+}
+.bus-head{
+  display: flex;
+  align-items: flex-end;
+  border-top: 1px solid hsl(230, 89%, 62%);
+  border-bottom: 1px solid hsl(230, 89%, 62%);
+}
+
+.bus-details h1, .bus-details p{
+  margin: 0;
+} 
+.bus-details p{
+  font-size: 1.5rem;
+} 
+.bus-details .ratings{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 20px;
+  margin-bottom: 20px;
+} 
+
+p .fa-circle{
+  margin-left: 17px;
+  display: inline-block;
+  font-size: 0.5;
+} 
+
+.ratings .stars{
+  margin-right: 20px;
+  border-radius: 0.7rem;
+  background-color: #aaa;
+  padding: 5px;
+} 
+
+.bus-logo{
+  padding: 10px;
+  width: 100px;
+}
+
+.review-card{
+  border-bottom: 1px solid #ee8;
+  margin-bottom: 20px;
+}
+
+.review-head{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+} 
+.review-head img{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+} 
+.review-head p{
+  margin: 0;
+  padding: 0;
+} 
+.name-box{
+  padding-right:15px;
+}
+aside{
+  margin-bottom: 20px;
+} 
+/*
+Break-points
+*/
+@media (min-width: 576px) {
+  .business{
+     width: 45.33%;
+   }
+}
+
+@media (min-width: 768px) {
+  .business{
+     width: 33%;
+   }
+  .container{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+  } 
+}
+
+@media (min-width: 992px) {
+  
+}
